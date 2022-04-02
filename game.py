@@ -1,6 +1,9 @@
 import pygame
 import math
 
+print('DETTE ER EN STI')
+
+
 pygame.init()
 screen = pygame.display.set_mode((600,600))
 #background = pygame.image.load('./imgs/space.jpg')
