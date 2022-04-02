@@ -1,7 +1,6 @@
 import pygame
 import math
 
-print('DETTE ER EN STI')
 
 
 pygame.init()
