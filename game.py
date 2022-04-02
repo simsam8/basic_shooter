@@ -2,7 +2,6 @@ import pygame
 import math
 
 
-
 pygame.init()
 screen = pygame.display.set_mode((600,600))
 #background = pygame.image.load('./imgs/space.jpg')
