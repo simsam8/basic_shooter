@@ -1,7 +1,6 @@
 import pygame
 import math
 
-print('fsdaf')
 
 pygame.init()
 screen = pygame.display.set_mode((600,600))
