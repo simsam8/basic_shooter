@@ -1,4 +1,4 @@
 -[x] refactor to classes
--[ ] player follows mouse when moving (WASD only)
+-[x] player follows mouse when moving (WASD only)
 -[ ] smooth player movement
--[ ] constant game speed independent of FPS
+-[x] constant game speed independent of FPS

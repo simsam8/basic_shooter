@@ -23,9 +23,9 @@ class Player:
         angle = (180 / math.pi) * -math.atan2(rel_Y, rel_X) - 90
         self.image = pygame.transform.rotate(self.original_img, int(angle))
         self.rect = self.image.get_rect(center=self.centre)
-        print(self.rect)
-        print('Pos: ', mouse_X,mouse_Y)
-        print('Angle: ', angle)
+        #print(self.rect)
+        #print('Pos: ', mouse_X,mouse_Y)
+        #print('Angle: ', angle)
         
     
     def move(self, amount, direction):
@@ -37,7 +37,6 @@ class Player:
             self.dX = amount
         if direction == "L":
             self.dY = amount
-        
         #self.centre[0] += self.dX
         #self.centre[1] += self.dY
         
@@ -48,6 +47,6 @@ class Player:
 
 
     def load_player(self, x,y):
-        #self.rotate() #smooth movement, but kills frames, find better solution
+        self.rotate() # better way to implement?
         self.rect = self.image.get_rect(center=self.centre)
         self.screen.blit(self.image, (x,y))
