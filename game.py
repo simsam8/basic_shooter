@@ -35,19 +35,19 @@ class Game:
         # top
         if oY < 0:
             newY = 0
-            print("OUT OF BOUNDS")
+            #print("OUT OF BOUNDS")
         # bottom
         if oY > DIMENSION[1]:
             newY = DIMENSION[1]
-            print("OUT OF BOUNDS")
+            #print("OUT OF BOUNDS")
         # left
         if oX < 0:
             newX = 0
-            print("OUT OF BOUNDS")
+            #print("OUT OF BOUNDS")
         # right
         if oX > DIMENSION[0]:
             newX = DIMENSION[0]
-            print("OUT OF BOUNDS")
+            #print("OUT OF BOUNDS")
             
         return [newX,newY]
         
@@ -87,9 +87,9 @@ class Game:
                         arrow.move(PLAYER_MOVEMENT_SPEED, "H")
                 if event.type == pygame.KEYUP:
                     if event.key == pygame.K_w or event.key == pygame.K_s:
-                        arrow.dY = 0 #-= PLAYER_MOVEMENT_SPEED/2
+                        arrow.dY -= PLAYER_MOVEMENT_SPEED/5 # temporary
                     if event.key == pygame.K_a or event.key == pygame.K_d:
-                        arrow.dX = 0 #-= PLAYER_MOVEMENT_SPEED/2
+                        arrow.dX -= PLAYER_MOVEMENT_SPEED/5 # temporary
             
             arrow.centre[1] += arrow.dY
             arrow.centre[0] += arrow.dX
