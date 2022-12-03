@@ -40,12 +40,13 @@ class Player:
         #self.centre[0] += self.dX
         #self.centre[1] += self.dY
         
-    
+    # Show debugging
     def debug(self):
         mouse_X, mouse_Y = pygame.mouse.get_pos()
         pygame.draw.line(self.screen, (0,0,0), self.centre, (mouse_X, mouse_Y), 2)
 
 
+    # Draw player to scrren
     def load_player(self, x,y):
         self.rotate() # better way to implement?
         self.rect = self.image.get_rect(center=self.centre)
