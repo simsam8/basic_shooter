@@ -23,6 +23,13 @@ class Game:
     
     
     def out_of_bounds(self, object):
+        '''
+        Check if an object if out of bounds
+        
+        returns position inside of screen
+        
+        returns [newX,newY]
+        '''
         oX,oY = object.centre
         newX,newY = object.centre
         # top
