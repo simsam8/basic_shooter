@@ -1,4 +1,5 @@
 -[x] refactor to classes
 -[x] player follows mouse when moving (WASD only)
--[ ] smooth player movement
+-[ ] better movement with acceleration and friction: https://api.arcade.academy/en/latest/examples/sprite_move_keyboard_accel.html
 -[x] constant game speed independent of FPS
+-[x] out of bounds check
