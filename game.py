@@ -1,6 +1,7 @@
 import pygame
-import math
 from player import Player
+
+# import math
 
 
 FPS = 60
